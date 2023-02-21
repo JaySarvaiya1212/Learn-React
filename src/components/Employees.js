@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 const Employees = ({ name, post }) => {
   const [view, setView] = useState(true);
   return (
-    <>
+    <div className='bg-gray-400'>
       <button onClick={() => setView(!view)}>
-        {view ? 'Hide Employees' : 'Show Employees'}
+        {view ? 'Hide Employees Data' : 'Show Employees Data'}
       </button>
       {view ? (
         <p>
@@ -14,7 +14,7 @@ const Employees = ({ name, post }) => {
       ) : (
         <p>You cannot see the data</p>
       )}
-    </>
+    </div>
   );
 };
 
