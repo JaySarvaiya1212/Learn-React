@@ -1,7 +1,10 @@
+import Employees from './components/Employees';
+
 function App() {
   return (
     <div className='App'>
-      <h1>Let's Learn</h1>
+      <Employees name='Jay' post='Full Stack Developer' />
+      <Employees name='Paru' post='Company Secretary' />
     </div>
   );
 }
